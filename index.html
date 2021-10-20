@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="faviconnt.ico" type="image/x-icon">
+    <link rel="stylesheet"  href="style.css">
+    <title>Nova Tela</title>
+</head>
+<body>
+    <header>
+      <h1 id="T1">Nova Tela</h1>
+      <br>
+      <nav>
+          <a href="index.html">Recarregar</a>
+          <a href="clientes.html">Clientes</a>
+          <a href="cadastro.html">Cadastro</a>
+          <a href="contato.html">Contatos</a>
+      </nav>
+    
+    <!--Comentario em html-->
+    <hr>
+    <p>Este é o site da nossa empresa, para melhor atendelos.</p>
+    <br>
+    <p class="P1">Seja Bem Vindo!</p>
+    <br>
+    <p id="P2">Seja Bem Vindo!</p>
+    <br>
+   </header>
+   <img src="novatela.png" alt="Logo empresa">
+
+   <Script>
+
+       //Comentar uma linha em js
+       /*Comentar mais de uma linha JS*/
+       window.alert('Este site e confiavel.')//Janela de alerta javaScript.
+       window.confirm('Deseja acessar?')//janela de confirmaçao JavaScript.
+       var nome = window.prompt('Qual é o seu nome?')//janela com caixa de texto JavaScript.
+       window.alert('Seja bem vindo: ' + nome + '!')//Concatenação!
+       
+       //Selecionando objectos com DOM
+       var d = window.document.getElementsByTagName('p')[0]
+       d.style.background = 'gray'
+       d.innerText = 'Este é o site da nossa empresa, para melhor atendelos!'
+       var t1 = window.document.getElementById('T1')//direto com id
+       t1.style.background = ''
+       var p1 = window.document.querySelector('p.P1')//. class
+       p1.style.background = 'gray'
+       var p2 = window.document.querySelector('p#P2')//# id
+       p2.style.background = 'gray'
+   
+   </Script>
+   
+</body>
+</html>

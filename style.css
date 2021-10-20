@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+    background-color:cadetblue;/* cor de fudo da tela */
+    font-family: Arial, Helvetica, sans-serif;/*Fonte para redenizar caracteres */
+    font-size: 20px;/* tamanho fonte*/
+    text-align: center;/*texto ficara alinhado no centro da pagina */
+    
+    
+    
+}
+
+h1 {
+    color: rgb(32, 17, 236);/*cor do caracteres */
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: 80px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: mediumblue;
+    margin: auto;/*conforme vai fechando a pagina, o conteudo vai se alinhando */
+}
+
+p {
+    text-align: justify;
+    text-align: center;
+    margin: auto;
+}
+nav {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightskyblue;
+    border-width: 5px;
+    border-style: solid;
+    border-color: mediumblue;
+    text-decoration: none;
+}
+nav > a {
+    text-decoration: none;
+    color:  rgb(32, 17, 236);
+    font-weight: bold;
+    margin-right: 150px;
+    text-align: center;
+    
+}
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+img {
+    width: 1200px;/*largura*/
+    height: 1000px;/*altura*/
+    margin: auto;
+    text-align: center;
+}
+h1#T1 {
+    color: blue;
+}
+p.P1 {
+    color:  blue;
+}
+p#P2{
+    color: blue;
+}
+table {
+    margin: auto;
+    text-align: center;
+    
+    
+}
