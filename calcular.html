@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="faviconnt.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Clientes</title>
+</head>
+<body>
+    <h1>Calculando Valores</h1>
+    <br>
+    <br>
+    <input type="number" name="txtn1" id="txtn1">
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div class="res">Resultado</div>
+    <br>
+    <input type="number" name="txtn3" id="txtn3">
+    <input type="number" name="txtn4" id="txtn4">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <div class="resp">Resultado</div>
+    <br>
+    <input type="number" name="txtn5" id="txtn5">
+    <input type="number" name="txtn6" id="txtn6">
+    <input type="button" value="divisao" onclick="divisao()">
+    <div class="respo">Resultado</div>
+    <br>
+    <input type="number" name="txtn7" id="txtn7"><!--box numeros, vamos ultilizar o id, para atribuir em uma variavel-->
+    <input type="number" name="txtn8" id="txtn8"><!--box numeros, vamos ultilizar o id, para atribuir em uma variavel-->
+    <input type="button" value="multiplicar" onclick="multiplicar()"><!--quando eu clicar no button e com o onclick que são os objetos, receberei dados da minha function-->
+    <div class="respos">Resultado</div><!--div para aparecer o resultado da function e tem a class que e da familia do id -->
+    <script>
+        function somar(){//atribuo essa função a um objeto
+            var tn1 = window.document.getElementById('txtn1')//atribuindo o id do box number('txtn1') na variavel tn1 
+            var tn2 = window.document.querySelector('input#txtn2')//atribuindo o id do box number('input#txtn2') na variavel tn2 
+            var res = window.document.querySelector('div.res')//atribuindo o id do button('div.res') na variavel res
+            var n1 = Number(tn1.value)//atribuindo o tipo de caractere tn1, na variavel n1
+            var n2 = Number(tn2.value)//atribuindo o tipo de caractere tn2, na variavel n2
+            var s = n1 + n2 //atribuindo a soma das variaveis n1 e n2 na variavel s
+            res.innerHTML = 'A soma entre ' + ( n1 ) + ' e ' + ( n2 ) + ' é igual a: ' + ( s )//atribuindo a soma da variavel n1 e variavel n2  na res.innerHTML
+        }
+        function subtrair(){
+            var tn3 = window.document.getElementById('txtn3')
+            var tn4 = window.document.querySelector('input#txtn4')
+            var resp = window.document.querySelector('div.resp')
+            var n3 = Number(tn3.value)
+            var n4 = Number(tn4.value)
+            var su = n3 - n4
+            resp.innerHTML = 'A subtração entre ' + ( n3 ) + ' e ' + ( n4 ) + ' é igual a: ' + ( su )
+        } 
+        function divisao(){
+            var tn5 = window.document.getElementById('txtn5')
+            var tn6 = window.document.querySelector('input#txtn6')
+            var respo = window.document.querySelector('div.respo')
+            var n5 = Number(tn5.value)
+            var n6 = Number(tn6.value)
+            var di = n5 / n6
+            respo.innerHTML = 'A disão de ' + ( n5 ) + ' para ' + ( n6 ) + ' é igual a: ' + ( di )
+        }
+        function multiplicar(){//atribuo essa função a um objeto
+            var tn7 = window.document.getElementById('txtn7')
+            var tn8 = window.document.querySelector('input#txtn8')
+            var respos = window.document.querySelector('div.respos')
+            var n7 = Number(tn7.value)
+            var n8 = Number(tn8.value)
+            var m = n7 * n8
+            respos.innerHTML = 'A multiplicação de ' + ( n7 ) + ' para ' + ( n8 ) + ' é igual a: ' + ( m )
+        }              
+    </script>
+    
+</body>
+</html>
